@@ -31,24 +31,14 @@ struct Player;
 struct Car
 {
 	BYTE pad_0x0[0x1E0];
-	////[FieldOffset(0x1e0)
 	Vector4 Position;
-
 	BYTE pad_0x1f0[128];
-
-	////[FieldOffset(0x270)]
 	Quaternion Rotation;
-	////[FieldOffset(0x280)]
 	Vector4 Velocity;
-	////[FieldOffset(0x290)]
 	Vector4 RotationalVelocity;
-
 	BYTE pad_0x2a0[17308];
-	////[FieldOffset(0x463c)]
 	Player* Player;
-
 	BYTE pad_0x4640[9312];
-	////[FieldOffset(0x6aa0)]
 	float Damage;
 };
 
@@ -56,13 +46,9 @@ struct Player
 {
 	BYTE pad_0x0[0x33C];
 	Car* Car;
-
 	BYTE pad_0x340[40];
-	//[FieldOffset(0x368)]
 	int PlayerId;
-
 	BYTE pad_0x36c[304];
-	//[FieldOffset(0x49c)]
 	float ReadOnlyDamage;
 };
 
@@ -345,15 +331,15 @@ float RandomValues[] = {
 	0.8741399562350589f,
 	0.10054174551668149f,
 	0.8321169433735031f,
-	0.8418019176828495f
+	0.8418019176828495f,
+	0.5f
 };
 
-int RandomIndex;
+BYTE RandomIndex;
 
 static float RandomFloat()
 {
-	++RandomIndex %= 255;
-	return RandomValues[RandomIndex];
+	return RandomValues[RandomIndex++];
 }
 
 static int RandomInt(int max)
