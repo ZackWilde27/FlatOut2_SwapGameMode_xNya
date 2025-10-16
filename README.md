@@ -6,7 +6,7 @@ Every 30 seconds, everybody switches cars
 
 There's both a regular version, and online-friendly version
 
-The online-friendly version makes the RNG completely deterministic, so that everybody in the lobby gets the same results and desync's don't occur
+The online-friendly version makes the RNG completely deterministic, so that everybody in the lobby gets the same results and desyncs don't occur
 
 <br>
 
