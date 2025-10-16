@@ -2,6 +2,10 @@
 
 My Swap Game Mode mod, built for the xNya mod loader
 
+The Reloaded version can be found [here](https://github.com/ZackWilde27/FlatOut2-SwapGameMode)
+
+<br>
+
 Every 30 seconds, everybody switches cars
 
 There's both a regular version, and online-friendly version
