@@ -125,6 +125,7 @@ void InterpretBuffers()
 void ReadINIFile(const char* filename)
 {
 	char bytes[2048];
+	memset(bytes, 0, 2048);
 	FILE* file = fopen(filename, "r");
 	fread(bytes, 1, 2048, file);
 	fclose(file);

@@ -505,8 +505,6 @@ static void ReadSettings()
 	_configuration.Character = NoChange;
 	_configuration.SwitchGameMode = true;
 
-	printf("Reading Settings...\n");
-
 	// Going with default settings if the file doesn't exist
 	FILE* file = fopen("swapGameModeSettings.txt", "r");
 	if (!file)
