@@ -30,4 +30,6 @@ The settings can be changed in `swapGameModeSettings.txt`
 
 I used Visual Studio 2022 on Windows
 
-You'll need Chloe's nya-common library, which can be cloned [here](https://github.com/gaycoderprincess/nya-common). Copy the nya-common folder to `source/SwapGameMode_xNya/SwapGameMode_xNya`, next to `dllmain.cpp`
+The project will default to the `x64` platform, which won't work even if it built, so switch it to `x86`
+
+You'll need Chloe's nya-common library, which can be cloned from [here](https://github.com/gaycoderprincess/nya-common). Copy the nya-common folder to `source/SwapGameMode_xNya/SwapGameMode_xNya`, next to `dllmain.cpp`
